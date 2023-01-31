@@ -1,41 +1,132 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* utils */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+:root {
+  --2second-black: #222222;
+  --1first-black: #000000;
+  --star: rgb(254 57 92);
+  --card-text: rgb(89 89 89);
+  --card-text-soft: rgb(146 142 155);
+
+
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* header */
+nav {
+
+  height: 70px;
+  display: flex;
+  padding: 20px 36px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-logo {
+  max-width: 100px;
+}
+/* hero */
+.hero-grid {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 60vh;
+  margin: 30px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.hero-img {
+  width: 70%;
+  min-width: 350px;
 }
 
+.hero-secondSection {
+  padding: 30px 20px;
+}
+
+.hero-secondSection p {
+  font-weight: 300;
+  color: var(--2second-black);
+}
+
+/* card */
 .card {
-  padding: 2em;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  color: var(--card-text);
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;
+  /* ADD */
+  display: flex;
+  /* ADD */
+  position: relative;
+  flex-direction: column;
+  /* border: solid transparent; */
+  /* ADD */
+}
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
 
-.read-the-docs {
-  color: #888;
+.card-image {
+  width: 236px;
+  height: 265px;
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+
+.card-rate {
+  display: flex;
+  gap: 0.2em;
+}
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+
+.star {
+  color: var(--star);
+  /* background: brown; */
+}
+
+.soft {
+  color: var(--card-text-soft);
+}
+
+.bold {
+  color: var(--1first-black);
+  font-weight: 600;
+}
+
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+.card--price {
+  margin-top: auto;
+}
+/* footer */
+footer{
+  background: var(--star);
+  color: white;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
