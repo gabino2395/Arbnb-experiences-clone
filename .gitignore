@@ -6,9 +6,13 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
+public
+vite.config.js
 node_modules
+.gitignore
 dist
+gitignore
+
 dist-ssr
 *.local
 
