@@ -6,7 +6,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-public
+/public/img
+index.html
+
 vite.config.js
 node_modules
 .gitignore
