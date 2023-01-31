@@ -18,7 +18,7 @@ Para la creacion de este proyecto se utilizo:
 
 Se puede ver el proyecto aqui:
 
-[Arbnb-clone](https://capable-griffin-2855e1.netlify.app)
+[Airbnb-clone](https://capable-griffin-2855e1.netlify.app)
 
   
    
